@@ -41,4 +41,4 @@ yarn-error.log*
 next-env.d.ts
 
 # Ignore CV PDF file
-public/assets/cv.pdf
+public/assests/cv.pdf
