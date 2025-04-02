@@ -30,9 +30,13 @@ const HeroSection = () => {
           </h1>
           <div>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-pink-600 via-purple-400 to-purple-200 hover:bg-slate-700 text-white mt-3">
-              <span className="block bg-[#6F8FAF] hover:bg-pink-500 rounded-full px-5 py-2">
+            <a
+                href="/assests/cv.pdf" // Link to the PDF CV
+                download="cv.pdf" // Optional: Customize the file name for download
+                className="block bg-[#6F8FAF] hover:bg-pink-500 rounded-full px-5 py-2"
+              >
                 Download CV
-              </span>
+              </a>
             </button>
           </div>
         </div>
