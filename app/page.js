@@ -1,3 +1,4 @@
+"use client"; // Add this line at the top of the file
 import Image from "next/image";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";

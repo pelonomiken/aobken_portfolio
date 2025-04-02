@@ -1,3 +1,4 @@
+"use client"; // Add this line at the top of the file
 import React from 'react';
 
 const TabButton = ({ active, selectTab, children }) => {
