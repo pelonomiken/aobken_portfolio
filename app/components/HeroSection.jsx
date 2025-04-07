@@ -3,44 +3,63 @@
 import React from 'react';
 import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
+import { Github, Linkedin, Twitter } from 'lucide-react';
 
 const HeroSection = () => {
   return (
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12">
+        {/* Left: Text Content */}
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-black mb-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-600 via-purple-400 to-purple-200"> 
-              Welcome, I'm{""}
+          <h1 className="text-white mb-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold font-sans">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0047AB] via-blue-700 to-pink-600">
+              Welcome, I'm{" "}
             </span>
-            <br></br>
+            <br />
             <TypeAnimation
               sequence={[
                 'Aobakwe R P Kenosi',
                 1000,
-                'A Software Developer',
+                'A Software Developer 💻',
                 1000,
-                'A Web Developer',
-                1000
+                'A Web Developer 🌐',
+                1000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
-          <div>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-pink-600 via-purple-400 to-purple-200 hover:bg-slate-700 text-white mt-3">
-            <a
-                href="/assests/cv.pdf" // Link to the PDF CV
-                download="cv.pdf" // Optional: Customize the file name for download
-                className="block bg-[#6F8FAF] hover:bg-pink-500 rounded-full px-5 py-2"
-              >
-                Download CV
-              </a>
-            </button>
-          </div>
+
+          {/* Social Media Icons */}
+          {/* Social Media Icons and Download Button */}
+        <div className="flex flex-wrap gap-4 mt-6 justify-center sm:justify-start items-center">
+        <a href="https://linkedin.com/in/arpk18" target="_blank" rel="noopener noreferrer">
+    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0047AB] text-white hover:scale-110 transition-transform duration-200 shadow-md">
+      <Linkedin size={20} />
+    </div>
+  </a>
+  <a href="https://github.com/pelonomiken" target="_blank" rel="noopener noreferrer">
+    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-black text-white hover:scale-110 transition-transform duration-200 shadow-md">
+      <Github size={20} />
+    </div>
+  </a>
+  {/* Download CV Button */}
+  <button className="px-4 py-3 rounded-md bg-gradient-to-r from-pink-600 via-purple-400 to-purple-200 text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-transform duration-200 shadow-md">
+    <a
+      href="/assests/cv.pdf"
+      download="cv.pdf"
+      className="block"
+    >
+      Download CV
+    </a>
+  </button>
+</div>
+
         </div>
-        <div className="col-span-5 place-self-center">
+
+        {/* Right: Profile Image */}
+        <div className="col-span-5 place-self-center mt-8 sm:mt-0">
           <div className="rounded-full bg-black w-[250px] h-[250px] relative overflow-hidden">
             <Image
               src="/images/dp.jpeg"

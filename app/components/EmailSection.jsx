@@ -6,10 +6,17 @@ import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 
 const EmailSection = () => {
   const [showPopup, setShowPopup] = useState(true);
-  const isFormDisabled = true; // Set this to false when form is working
+  const [isFormDisabled, setIsFormDisabled] = useState(true); // Manage form enable/disable dynamically
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can handle form submission logic
+    setIsFormDisabled(true); // Disable form again after submission (optional)
+    // Show a success notification, or handle the form response
+  };
 
   return (
-    <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 px-6 md:px-12 bg-white rounded-lg shadow-lg relative">
+    <section id="contact" className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-8 px-6 md:px-12 bg-white rounded-lg shadow-lg relative border-t border-gray-300 dark:border-gray-700 font-sans">
       {/* Popup Notification */}
       {showPopup && isFormDisabled && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-pink-100 border-l-4 border-pink-500 text-pink-700 p-4 rounded-lg shadow-md mt-6">
@@ -20,7 +27,7 @@ const EmailSection = () => {
             </div>
             <button 
               onClick={() => setShowPopup(false)} 
-              className="text-pink-700 hover:text-pink-900 ml-4"
+              className="text-pink-600 hover:text-pink-900 ml-4"
               aria-label="Close notification"
             >
               <X size={18} />
@@ -38,17 +45,17 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-4">
           <Link href="https://github.com/pelonomiken" target="_blank" rel="noopener noreferrer">
-            <Github className="text-[#6F8FAF] w-8 h-8 hover:text-gray-400 transition" />
+            <Github className="text-[#0047AB] w-8 h-8 hover:text-gray-400 transition" />
           </Link>
           <Link href="https://linkedin.com/in/arpk18" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="text-[#6F8FAF] w-8 h-8 hover:text-gray-400 transition" />
+            <Linkedin className="text-[#0047AB] w-8 h-8 hover:text-gray-400 transition" />
           </Link>
         </div>
       </div>
 
       {/* Right Section - Contact Form */}
       <div>
-        <form className="space-y-6">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           {/* Name Field */}
           <div>
             <label htmlFor="name" className="text-black block mb-2 text-sm font-semibold">
@@ -60,7 +67,7 @@ const EmailSection = () => {
               required 
               disabled={isFormDisabled}
               placeholder="John Doe"
-              className="bg-gray-50 border border-pink-400 text-black text-sm rounded-lg block w-full p-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="bg-gray-50 border border-pink-600 text-black text-sm rounded-lg block w-full p-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
 
