@@ -45,7 +45,7 @@ const HeroSection = () => {
     </div>
   </a>
   {/* Download CV Button */}
-  <button className="px-4 py-3 rounded-md bg-gradient-to-r from-pink-600 via-purple-400 to-purple-200 text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-transform duration-200 shadow-md">
+  <button className="px-4 py-3 rounded-md backdrop-blur-md bg-white/20 border border-white/30  text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-pink-500/30 transition-transform duration-200 shadow-md">
     <a
       href="/assests/cv.pdf"
       download="cv.pdf"
