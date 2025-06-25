@@ -26,7 +26,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-white lg:text-lg leading-relaxed font-sans mb-8">
-            Software developer passionate about creating impactful solutions. Proficient in Java, Python, JavaScript, React, and more. Excels in challenges, collaboration, and continuous learning in fast-paced environments.
+           Software developer focused on impactful solutions. Skilled in Java, Python, JavaScript, and React. Thrives on challenges, teamwork, and continuous learning in dynamic settings.
           </p>
 
           {/* Technologies Section (Stylish Expandable) */}
