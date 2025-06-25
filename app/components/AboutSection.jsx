@@ -38,7 +38,7 @@ const AboutSection = () => {
 
           {/* Technologies Section */}
           <motion.div 
-            className="mt-6 bg-gray-900/80 backdrop-blur-md p-1 rounded-xl shadow-lg border border-gray-700 overflow-hidden"
+            className="mt-6 bg-[#0E3386] backdrop-blur-md p-1 rounded-xl shadow-lg border border-gray-700 overflow-hidden"
             initial={false}
             animate={{ 
               borderColor: isTechOpen ? "rgba(96, 165, 250, 0.4)" : "rgba(55, 65, 81, 0.5)"
@@ -46,7 +46,7 @@ const AboutSection = () => {
             transition={{ duration: 0.3 }}
           >
             <button
-              className="w-full flex justify-between items-center p-5 hover:bg-gray-800/30 transition-colors duration-200"
+              className="w-full flex justify-between items-center p-5 transition-colors duration-200"
               onClick={() => setIsTechOpen(!isTechOpen)}
             >
               <div className="flex items-center space-x-3">
@@ -73,10 +73,10 @@ const AboutSection = () => {
                   className="px-5 pb-5"
                 >
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {["Python", "JavaScript", "Next.js", "FastAPI", "Postman"].map((tech) => (
+                    {["Python", "JavaScript", "Next.js", "FastAPI", "Postman", "Java"].map((tech) => (
                       <motion.div
                         key={tech}
-                        className="flex items-center py-2 px-3 bg-gray-800/50 rounded-md border border-gray-700 hover:border-blue-400/40 transition-all"
+                        className="flex items-center py-2 px-3 bg-[#6F8FAF] rounded-md  transition-all"
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.98 }}
                       >
@@ -92,7 +92,7 @@ const AboutSection = () => {
 
           {/* Education Section */}
           <motion.div 
-            className="mt-6 bg-gray-900/80 backdrop-blur-md p-1 rounded-xl shadow-lg border border-gray-700 overflow-hidden"
+            className="mt-6 bg-[#0E3386] backdrop-blur-md p-1 rounded-xl shadow-lg border border-gray-700 overflow-hidden"
             initial={false}
             animate={{ 
               borderColor: isEduOpen ? "rgba(96, 165, 250, 0.4)" : "rgba(55, 65, 81, 0.5)"
@@ -100,7 +100,7 @@ const AboutSection = () => {
             transition={{ duration: 0.3 }}
           >
             <button
-              className="w-full flex justify-between items-center p-5 hover:bg-gray-800/30 transition-colors duration-200"
+              className="w-full flex justify-between items-center p-5  transition-colors duration-200"
               onClick={() => setIsEduOpen(!isEduOpen)}
             >
               <div className="flex items-center space-x-3">
@@ -128,17 +128,17 @@ const AboutSection = () => {
                 >
                   <div className="space-y-4">
                     <motion.div
-                      className="py-3 px-4 bg-gray-800/50 rounded-md border border-gray-700 hover:border-blue-400/40 transition-all"
+                      className="py-3 px-4 bg-[#6F8FAF] rounded-md  transition-all"
                       whileHover={{ y: -2 }}
                     >
                       <div className="flex items-start">
                         <div className="w-2 h-2 rounded-full bg-blue-400 mr-3 mt-2 flex-shrink-0"></div>
                         <div>
                           <h4 className="text-gray-100 font-semibold">BSc Computer Systems Engineering</h4>
-                          <p className="text-gray-300 text-sm mt-1">University of Sunderland</p>
+                          <p className="text-gray-100 text-sm mt-1">University of Sunderland</p>
                           <div className="flex items-center mt-2">
-                            <CalendarIcon className="w-4 h-4 text-gray-400 mr-1" />
-                            <span className="text-gray-400 text-xs">2020 - 2024</span>
+                            <CalendarIcon className="w-4 h-4 text-gray-100 mr-1" />
+                            <span className="text-gray-100 text-xs">2020 - 2024</span>
                           </div>
                         </div>
                       </div>

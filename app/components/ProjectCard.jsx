@@ -24,9 +24,9 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
         </div>
       </div>
       {/* Text Section */}
-      <div className="text-[#0047AB] font-sans rounded-b-xl mt-3 bg-gradient-to-br from-blue-900/30 to-blue-800/20 backdrop-blur-sm p-1 rounded-xl shadow-2xl border border-blue-500/20 py-6 px-4 flex flex-col justify-between h-full">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-black text-sm font-normal">{description}</p>
+      <div className="text-gray-100 font-sans rounded-b-xl mt-3 bg-[#0E3386] backdrop-blur-sm p-1 rounded-xl shadow-2xl  py-6 px-4 flex flex-col justify-between h-full">
+        <h5 className="text-xl font-normal mb-2">{title}</h5>
+        <p className="text-gray-100 text-sm font-normal">{description}</p>
       </div>
     </div>
   );

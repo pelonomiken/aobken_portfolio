@@ -16,6 +16,7 @@ const HeroSection = () => {
               Welcome, I'm{" "}
             </span>
             <br />
+
             <TypeAnimation
               sequence={[
                 'Aobakwe R P Kenosi',
@@ -26,26 +27,27 @@ const HeroSection = () => {
                 1000,
               ]}
               wrapper="span"
-              speed={50}
+              speed={10}
               repeat={Infinity}
             />
+            
           </h1>
 
           {/* Social Media Icons */}
           {/* Social Media Icons and Download Button */}
         <div className="flex flex-wrap gap-4 mt-6 justify-center sm:justify-start items-center">
         <a href="https://linkedin.com/in/arpk18" target="_blank" rel="noopener noreferrer">
-    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0047AB] text-white hover:scale-110 transition-transform duration-200 shadow-md">
+    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0E3386] text-white hover:scale-110 transition-transform duration-200 shadow-md">
       <Linkedin size={20} />
     </div>
   </a>
   <a href="https://github.com/pelonomiken" target="_blank" rel="noopener noreferrer">
-    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0047AB] text-white hover:scale-110 transition-transform duration-200 shadow-md">
+    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0E3386] text-white hover:scale-110 transition-transform duration-200 shadow-md">
       <Github size={20} />
     </div>
   </a>
   {/* Download CV Button */}
-  <button className="px-4 py-3 rounded-md backdrop-blur-md bg-white/20 border border-white/30  text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-blue-500/30 transition-transform duration-200 shadow-md">
+  <button className="px-4 py-3 rounded-md backdrop-blur-md bg-white/20 border border-white/30  text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-[#0E3386] transition-transform duration-200 shadow-md">
     <a
       href="/assests/cv.pdf"
       download="cv.pdf"

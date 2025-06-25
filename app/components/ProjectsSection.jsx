@@ -25,7 +25,7 @@ const projectsData = [
     {
         id: 3,
         title: "Portfolio v1",
-        description: "Clean and minimalist portfolio showcasing my early work with pure HTML/CSS.",
+        description: "Minimalist portfolio showcasing my early work with pure HTML/CSS.",
         image: "images/project-3.png",
         tag: ["All"],
         gitUrl: "https://github.com/pelonomiken/pelonomiken.github.io",
