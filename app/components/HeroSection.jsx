@@ -40,7 +40,7 @@ const HeroSection = () => {
     </div>
   </a>
   <a href="https://github.com/pelonomiken" target="_blank" rel="noopener noreferrer">
-    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-black text-white hover:scale-110 transition-transform duration-200 shadow-md">
+    <div className="w-11 h-11 flex items-center justify-center rounded-full bg-[#0047AB] text-white hover:scale-110 transition-transform duration-200 shadow-md">
       <Github size={20} />
     </div>
   </a>
