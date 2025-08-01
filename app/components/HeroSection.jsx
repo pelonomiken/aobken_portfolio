@@ -49,7 +49,7 @@ const HeroSection = () => {
   {/* Download CV Button */}
   <button className="px-4 py-3 rounded-md backdrop-blur-md bg-white/20 border border-white/30  text-black font-sans uppercase text-sm hover:scale-105 hover:shadow-lg hover:shadow-[#0E3386] transition-transform duration-200 shadow-md">
     <a
-      href="/assests/cv.pdf"
+      href="/assests/Aobakwe_R_P_Kenosi_CV.pdf"
       download="cv.pdf"
       className="block"
     >
