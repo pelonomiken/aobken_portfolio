@@ -33,7 +33,7 @@ const AboutSection = () => {
             About Me
           </h2>
           <p className="text-white lg:text-lg leading-relaxed font-sans mb-8">
-            Software developer focused on impactful solutions. Skilled in Java, Python, JavaScript, and React. Thrives on challenges, teamwork, and continuous learning in dynamic settings.
+            Software developer focused on impactful solutions. Skilled in React Native, Python, JavaScript, and Next.js. Thrives on challenges, teamwork, and continuous learning in dynamic settings.
           </p>
 
           {/* Technologies Section */}
@@ -73,7 +73,7 @@ const AboutSection = () => {
                   className="px-5 pb-5"
                 >
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-                    {["Python", "JavaScript", "Next.js", "FastAPI", "Postman", "Java"].map((tech) => (
+                    {["Python", "React Native", "Next.js", "FastAPI", "Postman", "JavaScript"].map((tech) => (
                       <motion.div
                         key={tech}
                         className="flex items-center py-2 px-3 bg-[#6F8FAF] rounded-md  transition-all"

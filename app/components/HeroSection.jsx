@@ -21,9 +21,11 @@ const HeroSection = () => {
               sequence={[
                 'Aobakwe R P Kenosi',
                 1000,
-                'A Software Developer 💻',
+                'A Software Developer',
                 1000,
-                'A Web Developer 🌐',
+                'A Mobile App Developer',
+                1000,
+                'A Web Developer',
                 1000,
               ]}
               wrapper="span"
